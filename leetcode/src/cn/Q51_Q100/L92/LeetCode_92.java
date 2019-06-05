@@ -1,4 +1,4 @@
-package cn.Q51_Q100;
+package cn.Q51_Q100.L92;
 
 /**
  * @ClassName LeetCode_92

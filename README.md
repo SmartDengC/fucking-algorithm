@@ -59,7 +59,7 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [0086. Partition List](problems/Q51_Q100/L86)
 - [0092.reverse-linked-list-ii](problems/Q51_Q100/L92)
 - [160. Intersection of Two Linked Lists](problems/Q151_Q200/L160)
-- [142. Linked List Cycle II](problems/Q101_Q150/L142)
+- [142. Linked List Cycle II](problems/Q101_Q150)
 - [206. Reverse Linked List](problems/Q201_Q250/L206)
 
 

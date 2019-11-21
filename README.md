@@ -21,7 +21,7 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [206. Reverse Linked List](./problems/链表/206.&#32;Reverse&#32;Linked&#32;List.md)
 
 #### others
-
-- [169. Majority Element.md](./problems/169.&#32;Majority&#32;Element.md)
-- [242. Valid Anagram.md](./problems/242.&#32;Valid&#32;Anagram.md)
-- [268. Missing Number.md](./problems/268.&#32;Missing&#32;Number.md)
+- [136.Single-Number.md](./problems/136.Single-Number.md)
+- [169. Majority Element.md](./problems/169.Majority-Element.md)
+- [242. Valid Anagram.md](./problems/242.Valid-Anagram.md)
+- [268. Missing Number.md](./problems/268.Missing-Number.md)

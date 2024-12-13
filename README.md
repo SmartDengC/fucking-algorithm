@@ -1,6 +1,6 @@
 # LeetCode
 
-![leetcode.jpeg](./assets/leetcode.jpeg)
+![leetcode.jpeg](./fucking-algo-text/assets/leetcode.jpeg)
 
 ## 介绍
 
@@ -14,14 +14,14 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 ### 试题
 #### Linked List
 
-- [0086. Partition List](./problems/链表/86.&#32;Partition&#32;List.md)
-- [0092.reverse-linked-list-ii](./problems/链表/92.&#32;Reverse&#32;Linked&#32;List&#32;II.md)
-- [160. Intersection of Two Linked Lists](./problems/链表/160.&#32;Intersection&#32;of&#32;Two&#32;Linked&#32;Lists.md)
-- [142. Linked List Cycle II](./problems/链表/142.&#32;Linked&#32;List&#32;Cycle&#32;II.md)
-- [206. Reverse Linked List](./problems/链表/206.&#32;Reverse&#32;Linked&#32;List.md)
+- [0086. Partition List](./fucking-algo-text/problems/链表/86.&#32;Partition&#32;List.md)
+- [0092.reverse-linked-list-ii](./fucking-algo-text/problems/链表/92.&#32;Reverse&#32;Linked&#32;List&#32;II.md)
+- [160. Intersection of Two Linked Lists](./fucking-algo-text/problems/链表/160.&#32;Intersection&#32;of&#32;Two&#32;Linked&#32;Lists.md)
+- [142. Linked List Cycle II](./fucking-algo-text/problems/链表/142.&#32;Linked&#32;List&#32;Cycle&#32;II.md)
+- [206. Reverse Linked List](./fucking-algo-text/problems/链表/206.&#32;Reverse&#32;Linked&#32;List.md)
 
 #### others
-- [136.Single-Number.md](./problems/136.Single-Number.md)
-- [169. Majority Element.md](./problems/169.Majority-Element.md)
-- [242. Valid Anagram.md](./problems/242.Valid-Anagram.md)
-- [268. Missing Number.md](./problems/268.Missing-Number.md)
+- [136.Single-Number.md](./fucking-algo-text/problems/136.Single-Number.md)
+- [169. Majority Element.md](./fucking-algo-text/problems/169.Majority-Element.md)
+- [242. Valid Anagram.md](./fucking-algo-text/problems/242.Valid-Anagram.md)
+- [268. Missing Number.md](./fucking-algo-text/problems/268.Missing-Number.md)

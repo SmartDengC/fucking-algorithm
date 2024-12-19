@@ -79,4 +79,100 @@ public class List0 {
         stack.pop();
         stack.peek();
     }
+    public static int vowelStrings(String[] words, int left, int right) {
+        int cnt = 0;
+        List<Character> chars = Arrays.asList('a', 'e', 'i', 'o', 'u');
+        for(int i = left;i<=right;i++){
+            // 模拟
+            char[] s = words[i].toCharArray();
+            if(chars.contains(s[0]) && chars.contains(s[s.length - 1])){
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+    public static double findMaxAverage(int[] nums, int k) {
+        double ans = 0.0;
+        double sum = 0.0;
+        for(int i = 0;i<nums.length;i++){
+            sum += nums[i];
+            if(i < k-1){
+                continue;
+            }
+            ans = Math.max(ans, sum/ k);
+            sum -= nums[i-k+1];
+        }
+        return ans;
+    }
+
+    public static int numOfSubarrays(int[] arr, int k, int threshold) {
+        int cnt = 0;
+        double avg = Integer.MIN_VALUE;
+        double sum = 0.0;
+        for(int i = 0;i<arr.length;i++){
+            sum += arr[i];
+            if(i < k-1){
+                continue;
+            }
+            avg = Math.max(avg, sum/ k);
+            if(avg >= threshold){
+                cnt++;
+            }
+            sum -= arr[i-k+1];
+        }
+        return cnt;
+    }
+
+    public static int minimumRecolors(String blocks, int k) {
+        char[] s = blocks.toCharArray();
+        // 求最长的黑块的个数x， 然后使用k- x
+        int cnt = 0;
+        int ans = 0;
+        for(int i = 0;i<s.length;i++){
+            if(s[i] == 'B'){
+                cnt++;
+            }
+            if(i<k-1){
+                continue;
+            }
+            ans = Math.max(ans, cnt);
+            if(s[i-k+1] == 'B'){
+                cnt--;
+            }
+        }
+        return k - ans;
+    }
+
+    public static long maxSum(List<Integer> nums, int m, int k) {
+
+        Map<Integer, Integer> cnt = new HashMap<>();
+        long sum = 0;
+        long ans = 0;
+
+        for(int i = 0;i<k-1;i++){
+            sum += nums.get(i);
+            cnt.merge(nums.get(i), 1, Integer::sum);
+        }
+
+        for(int i = k-1;i<nums.size();i++){
+            sum += nums.get(i);
+            cnt.merge(nums.get(i), 1, Integer::sum);
+
+            if(cnt.size() >= m){
+                ans = Math.max(ans, sum);
+            }
+
+            sum -= nums.get(i-k+1);
+            if(cnt.merge(nums.get(i-k+1), -1, Integer::sum) == 0){
+                cnt.remove(nums.get(i-k+1));
+            }
+        }
+        return ans;
+    }
+
+
+    public static void main(String[] args) {
+        List<Integer> nums = Arrays.asList(1,1,1,3);
+        System.out.println(maxSum(nums, 2, 2));
+    }
 }

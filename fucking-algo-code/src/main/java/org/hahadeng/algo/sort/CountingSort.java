@@ -48,5 +48,6 @@ public class CountingSort {
         for(int x: ints){
             System.out.println(x);
         }
+        // null 不能和int向比较
     }
 }

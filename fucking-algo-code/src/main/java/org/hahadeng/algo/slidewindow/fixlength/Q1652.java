@@ -1,4 +1,4 @@
-package org.hahadeng.algo.slidewindow;
+package org.hahadeng.algo.slidewindow.fixlength;
 import org.junit.Test;
 
 import java.util.HashMap;

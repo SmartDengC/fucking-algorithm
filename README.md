@@ -2,6 +2,8 @@
 
 ![leetcode.jpeg](./fucking-algo-text/assets/leetcode.jpeg)
 
+[互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987/answer/586425979)
+
 ## 介绍
 
 leetcode 题解，记录自己的 leetcode 解题之路。

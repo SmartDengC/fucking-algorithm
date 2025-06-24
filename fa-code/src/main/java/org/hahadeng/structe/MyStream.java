@@ -1,4 +1,4 @@
-package org.hahadeng.func;
+package org.hahadeng.structe;
 
 import org.junit.Test;
 

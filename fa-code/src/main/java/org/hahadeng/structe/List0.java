@@ -1,4 +1,4 @@
-package org.hahadeng;
+package org.hahadeng.structe;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class List0 {
 
-    public static void listCreate(){
+    public static void listCreate() {
         // 为什么会存在new ArrayList来创建？
         List<Integer> integers = Arrays.asList(1, 2, 3);
         List<Integer> integers1 = new ArrayList<>(Arrays.asList(1, 2, 3));
@@ -21,12 +21,12 @@ public class List0 {
         }};
         // throw UnSupportOperationException
         integers.add(4);
-        for(Integer x: integers){
+        for (Integer x : integers) {
             System.out.println(x);
         }
     }
 
-    public static void collection(){
+    public static void collection() {
         List<Integer> integers = Collections.nCopies(16, 0);
         ArrayList<Integer> integers1 = new ArrayList<>(integers);
 
@@ -48,7 +48,7 @@ public class List0 {
         integers2.add(2, 2);
     }
 
-    public static void queue(){
+    public static void queue() {
         // Queue是java标准库中的队列接口，常用的实现类有LinkedList和PriorityQueue。
         // 队列先进先出
         Queue<Integer> q = new LinkedList<>();
@@ -66,7 +66,7 @@ public class List0 {
         List<Integer> l1 = new ArrayList<>();
         Set<Integer> s1 = new HashSet<>();
         Map<Integer, Integer> m1 = new HashMap<>();
-        for(Map.Entry<Integer, Integer> x: m1.entrySet()){
+        for (Map.Entry<Integer, Integer> x : m1.entrySet()) {
             x.getKey();
             x.getValue();
         }
@@ -79,28 +79,30 @@ public class List0 {
         stack.pop();
         stack.peek();
     }
+
     public static int vowelStrings(String[] words, int left, int right) {
         int cnt = 0;
         List<Character> chars = Arrays.asList('a', 'e', 'i', 'o', 'u');
-        for(int i = left;i<=right;i++){
+        for (int i = left; i <= right; i++) {
             // 模拟
             char[] s = words[i].toCharArray();
-            if(chars.contains(s[0]) && chars.contains(s[s.length - 1])){
+            if (chars.contains(s[0]) && chars.contains(s[s.length - 1])) {
                 cnt++;
             }
         }
         return cnt;
     }
+
     public static double findMaxAverage(int[] nums, int k) {
         double ans = 0.0;
         double sum = 0.0;
-        for(int i = 0;i<nums.length;i++){
+        for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
-            if(i < k-1){
+            if (i < k - 1) {
                 continue;
             }
-            ans = Math.max(ans, sum/ k);
-            sum -= nums[i-k+1];
+            ans = Math.max(ans, sum / k);
+            sum -= nums[i - k + 1];
         }
         return ans;
     }
@@ -109,16 +111,16 @@ public class List0 {
         int cnt = 0;
         double avg = Integer.MIN_VALUE;
         double sum = 0.0;
-        for(int i = 0;i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            if(i < k-1){
+            if (i < k - 1) {
                 continue;
             }
-            avg = Math.max(avg, sum/ k);
-            if(avg >= threshold){
+            avg = Math.max(avg, sum / k);
+            if (avg >= threshold) {
                 cnt++;
             }
-            sum -= arr[i-k+1];
+            sum -= arr[i - k + 1];
         }
         return cnt;
     }
@@ -128,15 +130,15 @@ public class List0 {
         // 求最长的黑块的个数x， 然后使用k- x
         int cnt = 0;
         int ans = 0;
-        for(int i = 0;i<s.length;i++){
-            if(s[i] == 'B'){
+        for (int i = 0; i < s.length; i++) {
+            if (s[i] == 'B') {
                 cnt++;
             }
-            if(i<k-1){
+            if (i < k - 1) {
                 continue;
             }
             ans = Math.max(ans, cnt);
-            if(s[i-k+1] == 'B'){
+            if (s[i - k + 1] == 'B') {
                 cnt--;
             }
         }
@@ -149,22 +151,22 @@ public class List0 {
         long sum = 0;
         long ans = 0;
 
-        for(int i = 0;i<k-1;i++){
+        for (int i = 0; i < k - 1; i++) {
             sum += nums.get(i);
             cnt.merge(nums.get(i), 1, Integer::sum);
         }
 
-        for(int i = k-1;i<nums.size();i++){
+        for (int i = k - 1; i < nums.size(); i++) {
             sum += nums.get(i);
             cnt.merge(nums.get(i), 1, Integer::sum);
 
-            if(cnt.size() >= m){
+            if (cnt.size() >= m) {
                 ans = Math.max(ans, sum);
             }
 
-            sum -= nums.get(i-k+1);
-            if(cnt.merge(nums.get(i-k+1), -1, Integer::sum) == 0){
-                cnt.remove(nums.get(i-k+1));
+            sum -= nums.get(i - k + 1);
+            if (cnt.merge(nums.get(i - k + 1), -1, Integer::sum) == 0) {
+                cnt.remove(nums.get(i - k + 1));
             }
         }
         return ans;
@@ -172,7 +174,7 @@ public class List0 {
 
 
     public static void main(String[] args) {
-        List<Integer> nums = Arrays.asList(1,1,1,3);
+        List<Integer> nums = Arrays.asList(1, 1, 1, 3);
         System.out.println(maxSum(nums, 2, 2));
     }
 }

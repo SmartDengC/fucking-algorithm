@@ -3,17 +3,21 @@
 ![leetcode.jpeg](./fa-content/assets/leetcode.jpeg)
 
 [互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987/answer/586425979)  
-[灵神-分享｜如何科学刷题？](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)
+[灵神-分享｜如何科学刷题？](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)  
+[力扣｜初级算法](https://leetcode.cn/leetbook/read/top-interview-questions-easy/x6w3ds/)
+
 ## 介绍
 
 LeetCode 题解，记录自己的 LeetCode 解题之路。
 
 ## 精彩预告
+
 ### LeetCode 题目的解析
 
 > 这里仅列举具有代表性题目，并不是全部题目
 
 ### 试题
+
 #### Linked List
 
 - [0086. Partition List](./fa-content/problems/链表/86.&#32;Partition&#32;List.md)
@@ -23,6 +27,7 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 - [206. Reverse Linked List](./fa-content/problems/链表/206.&#32;Reverse&#32;Linked&#32;List.md)
 
 #### others
+
 - [136.Single-Number.md](./fa-content/problems/136.Single-Number.md)
 - [169. Majority Element.md](./fa-content/problems/169.Majority-Element.md)
 - [242. Valid Anagram.md](./fa-content/problems/242.Valid-Anagram.md)

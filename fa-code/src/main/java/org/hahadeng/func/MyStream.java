@@ -3,7 +3,6 @@ package org.hahadeng.func;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -22,10 +21,10 @@ public class MyStream {
         names.stream().filter(name -> name.length() == 2).forEach(System.out::println);
 
         // 并行流
-        names.parallelStream().filter(name -> name.length() == 2 ).forEach(System.out::println);
+        names.parallelStream().filter(name -> name.length() == 2).forEach(System.out::println);
 
-        int[] a = {1,2,3};
-        int[] b = new int[]{1,2,3};
+        int[] a = {1, 2, 3};
+        int[] b = new int[]{1, 2, 3};
 
         Optional<Integer> first = ints.stream().filter(x -> x > 2).findFirst();
         first.ifPresent(System.out::println);
@@ -62,6 +61,7 @@ public class MyStream {
         words.stream().map(String::toUpperCase).forEach(System.out::println);
         ints.stream().map(x -> x + 2).forEach(System.out::println);
     }
+
     @Test
     public void test4() {
         List<Integer> ints = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
@@ -77,12 +77,7 @@ public class MyStream {
         Integer reduce5 = ints.stream().reduce(1, Integer::max);
     }
 
-    @Test
-    public void test5() {
-        List<Integer> ints = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-        List<Integer> newInts = ints.stream().filter(x -> x % 2 == 1).collect(Collectors.toList());
-        Set<Integer> newInts2 = ints.stream().filter(x -> x % 2 == 1).collect(Collectors.toSet());
-    }
+
     @Test
     public void test6() {
         List<Integer> ints = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 9, 8));

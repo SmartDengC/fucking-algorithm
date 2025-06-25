@@ -10,6 +10,9 @@
 
 LeetCode 题解，记录自己的 LeetCode 解题之路。
 
+## 参考
+[azl397985856/leetcode](https://github.com/azl397985856/leetcode)
+
 ## 精彩预告
 
 ### LeetCode 题目的解析

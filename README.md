@@ -21,6 +21,9 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 
 ### 试题
 
+#### Recently
+- [594.最长和谐子序列.md](./fa-content/problems/594.最长和谐子序列.md)
+
 #### Linked List
 
 - [0086. Partition List](./fa-content/problems/链表/86.&#32;Partition&#32;List.md)
@@ -35,3 +38,4 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 - [169. Majority Element.md](./fa-content/problems/169.Majority-Element.md)
 - [242. Valid Anagram.md](./fa-content/problems/242.Valid-Anagram.md)
 - [268. Missing Number.md](./fa-content/problems/268.Missing-Number.md)
+

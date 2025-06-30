@@ -1,4 +1,4 @@
-package org.hahadeng.algo;
+package org.hahadeng.algo.lc;
 
 /**
  * <a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-array/description/">...</a>

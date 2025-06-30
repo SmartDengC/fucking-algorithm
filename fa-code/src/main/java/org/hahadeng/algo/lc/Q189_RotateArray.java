@@ -1,4 +1,4 @@
-package org.hahadeng.algo;
+package org.hahadeng.algo.lc;
 
 import java.util.Arrays;
 

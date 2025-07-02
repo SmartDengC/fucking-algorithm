@@ -10,6 +10,9 @@
 
 LeetCode 题解，记录自己的 LeetCode 解题之路。
 
+## 参考
+[azl397985856/leetcode](https://github.com/azl397985856/leetcode)
+
 ## 精彩预告
 
 ### LeetCode 题目的解析
@@ -17,6 +20,9 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 > 这里仅列举具有代表性题目，并不是全部题目
 
 ### 试题
+
+#### Recently
+- [594.最长和谐子序列.md](./fa-content/problems/594.最长和谐子序列.md)
 
 #### Linked List
 
@@ -32,3 +38,4 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 - [169. Majority Element.md](./fa-content/problems/169.Majority-Element.md)
 - [242. Valid Anagram.md](./fa-content/problems/242.Valid-Anagram.md)
 - [268. Missing Number.md](./fa-content/problems/268.Missing-Number.md)
+

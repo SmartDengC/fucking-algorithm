@@ -1,8 +1,6 @@
-package org.hahadeng.algo;
+package org.hahadeng.algo.lc;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -34,6 +32,14 @@ public class Q349_IntersectionOfTwoArrays {
     public int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> st = Arrays.stream(nums1).boxed().collect(Collectors.toSet());
         return Arrays.stream(nums2).filter(st::remove).toArray();
+    }
+
+    public static void main(String[] args) {
+        Map<String, Integer> cnt = new HashMap<>();
+        String key = "Joe";
+
+        cnt.computeIfAbsent(key, k -> 0);
+        cnt.put(key, cnt.get(key) + 1);
     }
 
 }

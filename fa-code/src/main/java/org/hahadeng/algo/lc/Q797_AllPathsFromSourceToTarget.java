@@ -1,6 +1,11 @@
 package org.hahadeng.algo.lc;
 
+import cn.hutool.core.date.LocalDateTimeUtil;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -41,6 +46,19 @@ public class Q797_AllPathsFromSourceToTarget {
 
             path.remove(path.size() - 1);
         }
+    }
+
+    public static void main(String[] args) {
+        String now = "2025-07-28T15:55:00";
+        LocalDateTime parse = LocalDateTime.parse(now, DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        System.out.println(parse.toString());
+        // DateUtil.format();
+        // DateUtil.parse();
+
+        LocalDateTime localDateTime = LocalDateTimeUtil.of(new Date());
+
+        System.out.println(localDateTime.toString());
+
     }
 
 }

@@ -2,10 +2,7 @@ package org.hahadeng.algo.lc;
 
 import org.hahadeng.algo.basic.TreeNode;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author 邓聪
@@ -73,11 +70,36 @@ public class Q104_MaximumDepthOfBinaryTree {
         return ans;
     }
 
-    public static void main(String[] args) {
+    public void invoke() {
         Integer[] val = {3, 9, 20, null, null, 15, 7};
         TreeNode root = TreeNode.initTree(val);
-
         Q104_MaximumDepthOfBinaryTree q104 = new Q104_MaximumDepthOfBinaryTree();
         q104.maxDepth(root);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {3, 4, 5, 2, 1};
+        Integer[] arr1 = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+
+        // 传入一个new出来的比较器
+        Arrays.sort(arr1, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer integer, Integer t1) {
+                return t1 - integer;
+            }
+        });
+        // lambda
+        Arrays.sort(arr1, (x, y) -> {
+            return y - x;
+        });
+        // 使用Collections.reverseOrder()方法
+        Arrays.sort(arr1, Collections.reverseOrder());
+
+        TreeNode[] nodes = new TreeNode[3];
+        nodes[0] = new TreeNode(3);
+        nodes[1] = new TreeNode(2);
+        nodes[2] = new TreeNode(1);
+        Arrays.sort(nodes);
+        System.out.println(Arrays.toString(nodes));
     }
 }

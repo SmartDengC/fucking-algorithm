@@ -3,6 +3,7 @@ package org.hahadeng;
 import org.hahadeng.structe.List0;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -114,14 +115,10 @@ class List0Test {
 
     @Test
     void vowelStrings2() {
-        int i;
-        String s = "1101";
-        System.out.println(s.hashCode());
-        char[] charArray = s.toCharArray();
-        s = s.substring(1);
-        System.out.println(s.hashCode());
-        System.out.println(s);
-        System.out.println(Integer.bitCount(0));
+        int[] arr = {3, 4, 5, 2, 1};
+        Arrays.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
 
     }
 }

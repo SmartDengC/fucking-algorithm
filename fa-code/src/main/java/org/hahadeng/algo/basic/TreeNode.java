@@ -9,7 +9,7 @@ import java.util.Queue;
  * @author 邓聪
  * @since 2025/7/23 19:51
  */
-public class TreeNode {
+public class TreeNode implements Comparable<TreeNode> {
     public int val;
     public TreeNode left;
     public TreeNode right;
@@ -17,14 +17,23 @@ public class TreeNode {
     TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "val=" + val +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
     }
 
     /**
@@ -64,5 +73,10 @@ public class TreeNode {
     public static void main(String[] args) {
         // 测试
         initTree(new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 4});
+    }
+
+    @Override
+    public int compareTo(TreeNode treeNode) {
+        return this.val - treeNode.val;
     }
 }

@@ -1,5 +1,6 @@
 package org.hahadeng.algo.lc;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -51,10 +52,30 @@ public class Q3487_MaximumUniqueSubArraySumAfterDeletion {
         x = 2;
     }
 
+    public int[][] reverseSubmatrix(int[][] grid, int x, int y, int k) {
+        // 先循环列
+        for (int j = y; j < y + k; j++) {
+            // 双指针交换
+            int left = x, right = x + k - 1;
+            while (left < right) {
+                int t = grid[left][j];
+                grid[left][j] = grid[right][j];
+                grid[right][j] = t;
+                left++;
+                right--;
+            }
+        }
+        return grid;
+    }
+
     public static void main(String[] args) {
-        int x = 0;
-        modify(x);
-        System.out.println(x);
+        int[][] grid = {{3,4,2,3},{2,3,4,2}};
+        int x = 0, y = 2, k = 2;
+        Q3487_MaximumUniqueSubArraySumAfterDeletion q = new Q3487_MaximumUniqueSubArraySumAfterDeletion();
+        int[][] ints = q.reverseSubmatrix(grid, x, y, k);
+        for(int[] xx: ints){
+      System.out.println(Arrays.toString(xx));
+        }
     }
 
 }

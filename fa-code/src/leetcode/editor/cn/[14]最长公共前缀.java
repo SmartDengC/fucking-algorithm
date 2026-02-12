@@ -32,6 +32,11 @@ package cn;
 // Related Topics 字典树 数组 字符串 👍 3460 👎 0
 
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution14 {
     public String longestCommonPrefix(String[] strs) {
@@ -55,6 +60,16 @@ class Solution14 {
         Solution14 s = new Solution14();
         String[] strs = {"a"};
         s.longestCommonPrefix(strs);
+        // set判断key是否存在使用的是contains()
+        Set<Integer> set = new HashSet<>();
+        set.contains(1);
+
+        // map判断是否存在key使用的api是containsKey()
+        // map还有一个containsValue()的方法，判断是否存在value
+        Map<Integer, Integer> map = new HashMap<>();
+        Integer put = map.put(1, 1);
+        map.containsKey(1);
+        map.containsValue(1);
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)

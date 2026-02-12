@@ -1,41 +1,23 @@
 # LeetCode
-
-![leetcode.jpeg](./fa-content/assets/leetcode.jpeg)
-
-[互联网公司最常见的面试算法题有哪些？](https://www.zhihu.com/question/24964987/answer/586425979)  
+LeetCode 题解，记录自己的 LeetCode 解题之路。
 [灵神-分享｜如何科学刷题？](https://leetcode.cn/discuss/post/3141566/ru-he-ke-xue-shua-ti-by-endlesscheng-q3yd/)  
-[力扣｜初级算法](https://leetcode.cn/leetbook/read/top-interview-questions-easy/x6w3ds/)
-
 ## 介绍
 
-LeetCode 题解，记录自己的 LeetCode 解题之路。
+我发现我不喜欢算法题一个原因是确实太难了，懒懒散散的；
+第二个问题就是刷题比较繁琐，在leetcode官方上做题，遇到代码跑不过测试用例的时候，需要在编辑器里面创建java文件，然后把代码拷过来，在自己编写测试用例等等，这些让我一而再再而三的放弃算法的学习；在加上现在大模型的崛起，更加削减了对算法的热情。
+现在构建出来自己的刷题流程，持之以恒。
+
+## 工作流
+1、使用ide加上leetcode-editor插件，构建出自己熟悉的刷题流程，参考leetcode上大神的配置过程：[技术分享｜IDEA使用LeetCode插件](https://leetcode.cn/discuss/post/3431133/ji-zhu-fen-xiang-ideashi-yong-leetcodech-pzm2/)
+简单总结就是，安装leetcode-editor插件，配置插件生成文件的目录， 配置一些不是jdk提供的，但是在leetcode上会出现的类。
+![](./fa-content/assets/ide_leetcode_editor.png)
+
+2、配合opencode解决看不懂的代码
+
+
 
 ## 参考
 [azl397985856/leetcode](https://github.com/azl397985856/leetcode)
 
-## 精彩预告
 
-### LeetCode 题目的解析
-
-> 这里仅列举具有代表性题目，并不是全部题目
-
-### 试题
-
-#### Recently
-- [594.最长和谐子序列.md](./fa-content/problems/594.最长和谐子序列.md)
-
-#### Linked List
-
-- [0086. Partition List](./fa-content/problems/链表/86.&#32;Partition&#32;List.md)
-- [0092.reverse-linked-list-ii](./fa-content/problems/链表/92.&#32;Reverse&#32;Linked&#32;List&#32;II.md)
-- [160. Intersection of Two Linked Lists](./fa-content/problems/链表/160.&#32;Intersection&#32;of&#32;Two&#32;Linked&#32;Lists.md)
-- [142. Linked List Cycle II](./fa-content/problems/链表/142.&#32;Linked&#32;List&#32;Cycle&#32;II.md)
-- [206. Reverse Linked List](./fa-content/problems/链表/206.&#32;Reverse&#32;Linked&#32;List.md)
-
-#### others
-
-- [136.Single-Number.md](./fa-content/problems/136.Single-Number.md)
-- [169. Majority Element.md](./fa-content/problems/169.Majority-Element.md)
-- [242. Valid Anagram.md](./fa-content/problems/242.Valid-Anagram.md)
-- [268. Missing Number.md](./fa-content/problems/268.Missing-Number.md)
 

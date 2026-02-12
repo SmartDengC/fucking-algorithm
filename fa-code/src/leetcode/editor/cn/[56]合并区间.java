@@ -45,7 +45,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution56 {
     public int[][] merge(int[][] intervals) {
 
         Arrays.sort(intervals, (p, q) -> (p[0] - q[0]));
@@ -67,7 +67,7 @@ class Solution {
 
     public static void main(String[] args) {
         int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-        Solution x = new Solution();
+        Solution56 x = new Solution56();
         x.merge(intervals);
     }
 }

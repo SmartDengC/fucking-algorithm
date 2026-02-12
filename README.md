@@ -13,6 +13,7 @@ LeetCode 题解，记录自己的 LeetCode 解题之路。
 ## 工作流
 1、ide配合leetcode-editor插件，构建出自己熟悉的刷题流程
 参考leetcode上大神的配置过程：[技术分享｜IDEA使用LeetCode插件](https://leetcode.cn/discuss/post/3431133/ji-zhu-fen-xiang-ideashi-yong-leetcodech-pzm2/)
+
 简单总结就是，安装leetcode-editor插件，配置插件生成文件的目录， 配置一些不是jdk提供的，但是在leetcode上会出现的类。
 ![](./fa-content/assets/ide_leetcode_editor.png)
 

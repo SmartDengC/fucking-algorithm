@@ -64,7 +64,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution205 {
     public boolean isIsomorphic(String s, String t) {
 
         Map<Character, Character> x = new HashMap<>();
@@ -84,11 +84,32 @@ class Solution {
         return true;
     }
 
+    public String mapWordWeights(String[] words, int[] weights) {
+
+        StringBuilder sb = new StringBuilder();
+
+        for (String x : words) {
+            int nums = 0;
+            for (char c : x.toCharArray()) {
+                // 使用 - 'a'的方式有一个好处就是，不用去记a的ascii码对应的数字是多少，
+                // 只需要减去 a 字符就可以
+                int idx = c - 'a';
+                nums += weights[idx];
+            }
+            nums %= 26;
+            // 在将数字转化成字符也可以这样用，直接用字符z-去对应数字
+            // 然后在(char转化一下)
+            sb.append((char) (nums + 97));
+        }
+        return sb.toString();
+
+    }
+
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s = "badc";
-        String t = "baba";
-        solution.isIsomorphic(s, t);
+        Solution205 solution = new Solution205();
+        String[] words = {"abcd", "def", "xyz"};
+        int[] weight = {5, 3, 12, 14, 1, 2, 3, 2, 10, 6, 6, 9, 7, 8, 7, 10, 8, 9, 6, 9, 9, 8, 3, 7, 7, 2};
+        solution.mapWordWeights(words, weight);
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)

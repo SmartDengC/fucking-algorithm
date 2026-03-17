@@ -37,7 +37,7 @@ package cn;
 
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution693 {
     public boolean hasAlternatingBits(int n) {
 
         String x = Integer.toBinaryString(n);

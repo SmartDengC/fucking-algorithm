@@ -59,7 +59,7 @@ package cn;
 
 import java.util.Arrays;
 
-class Solution {
+class Solution1727 {
     public int largestSubmatrix(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
